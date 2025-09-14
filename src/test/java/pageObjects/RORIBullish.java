@@ -62,7 +62,7 @@ public class RORIBullish {
 
 			boolean riseInOiStatus = false;
 			for (int i = 0; i < riseInOiRowData.size(); i++) {
-				if (riseInOiRowData.get(i).getText().contains("Stock Futures")) {
+				if (riseInOiRowData.get(i).getText().contains("Stock Futures") || riseInOiRowData.get(i).getText().contains("Stock Options")) {
 					riseInOiStatus = true;
 					break;
 				}

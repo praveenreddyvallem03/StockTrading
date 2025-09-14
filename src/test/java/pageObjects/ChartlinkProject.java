@@ -45,7 +45,7 @@ public class ChartlinkProject {
 			actions.moveToElement(run).click().perform();
 			Thread.sleep(2000);
 			List<WebElement> data = driver.findElements(
-					By.xpath("//table[@class='w-full']//tbody//tr/td[position()=3 or position()=5]"));
+					By.xpath("//table[@class='rounded-b-[7px] min-w-max lg:w-full whitespace-nowrap']//tbody//tr/td[position()=3 or position()=5]"));
 			for (WebElement stockdata : data) {
 				System.out.println("[MYLOG]"+" :  "+ stockdata.getText());
 			}
