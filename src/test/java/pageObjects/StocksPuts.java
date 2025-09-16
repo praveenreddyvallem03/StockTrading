@@ -24,6 +24,8 @@ public class StocksPuts {
 	public static void urlOfMostActiveStocksPuts() {
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless"); 
+		options.addArguments("--no-sandbox");          
+		options.addArguments("--disable-dev-shm-usage");
 		driver = new FirefoxDriver(options);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

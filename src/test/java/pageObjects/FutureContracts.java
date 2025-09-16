@@ -33,6 +33,8 @@ public class FutureContracts {
 	public static void mostActiveFutureContractUrl() {
 		FirefoxOptions options = new FirefoxOptions();
 		options.addArguments("--headless");
+		options.addArguments("--no-sandbox");          
+		options.addArguments("--disable-dev-shm-usage");
 		driver = new FirefoxDriver(options);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -44,9 +46,13 @@ public class FutureContracts {
 		String red = "\u001B[31m";
 		String reset = "\u001B[0m";
 		try {
+			
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			driver.findElement(ActiveFutureContractsPageLocators.btnMostActiveFutureContracts).click();
-			
+			WebElement dropdown=driver.findElement(By.xpath("//select[@name='mac_equity_filter']"));
+			Select select=new Select(dropdown);
+			select.selectByVisibleText("Most Active Future Contracts");
+//			Thread.sleep(3000);
 			System.out.println("[MYLOG]"+" :  "+
 					red + "************************[   MOST ACTIVE FUTURE CONTRACTS   ]*********************" + reset);
 			
