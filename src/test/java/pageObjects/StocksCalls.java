@@ -41,7 +41,7 @@ public class StocksCalls {
 			String red = "\u001B[31m";
 	        String reset = "\u001B[0m";
 
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(05));
 			driver.findElement(By.xpath("//option[text()='Most Active Stocks Calls']")).click();
 			System.out.println("[MYLOG]"+" :  "+red+"************************[  MOST ACTIVE STOCKS CALLS   ]*********************"+reset);
 			

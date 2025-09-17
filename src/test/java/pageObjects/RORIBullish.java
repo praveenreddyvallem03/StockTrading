@@ -35,7 +35,7 @@ public class RORIBullish {
 	}
 
 	public static void riseInOiandRiseInPrice() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(05));
 		String red = "\u001B[31m";
 		String reset = "\u001B[0m";
 		try {

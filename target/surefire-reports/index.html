@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-BDD_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">BDD Suite</span>
+              <span class="suite-name border-failed">BDD Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods,  14 skipped,  6 passed</span>
+                    <span class="method-stats">17 methods, 1 failed,  11 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BDD_Suite" class="hide-methods failed suite-BDD_Suite"> (hide)</a> <!-- hide-methods failed suite-BDD_Suite -->
+                      <a href="#" panel-name="suite-BDD_Suite" class="show-methods failed suite-BDD_Suite"> (show)</a> <!-- show-methods failed suite-BDD_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-BDD_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BDD_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Retried methods</span>
@@ -103,32 +117,17 @@
                     <div class="method-list-content skipped suite-BDD_Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Calls Data from Nse&quot;, &quot;Validation For Most Active Stocks calls Data F...)">runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,17 +137,7 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -164,6 +153,16 @@
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Calls Data from Nse&quot;, &quot;Validation For Most Active Stocks calls Data F...)">runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -182,7 +181,7 @@
                     <div class="method-list-content passed suite-BDD_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Short Covering Stocks Data from Nse&quot;, &quot;Validation For Short Covering Data Slide In Oi Ri...)">runScenario("Extracting Short Covering Stocks Data from Nse", "Validation For Short Covering Data Slide In Oi Ri...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -192,22 +191,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Short Covering Stocks Data from Nse&quot;, &quot;Validation For Short Covering Data Slide In Oi Ri...)">runScenario("Extracting Short Covering Stocks Data from Nse", "Validation For Short Covering Data Slide In Oi Ri...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting data from chartlink&quot;, &quot;Validation For Most Active Futures Contracts Data in chartlink&quot;)">runScenario("Extracting data from chartlink", "Validation For Most Active Futures Contracts Data in chartlink")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDD_Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BDD_Suite -->
@@ -222,6 +216,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-BDD_Suite" class="panel BDD_Suite">
+          <div class="suite-BDD_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">
+                  </a> <!-- runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Extracting data from Nse of Rise In OI Rise In Price","Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at pageObjects.RORIBullish.riseInOiandRiseInPrice(RORIBullish.java:75)
+	at stepDefinitions.BullishStocksTradStepDefinition.click_on_rise_in_oi_rise_in_price_for_stocks_data(BullishStocksTradStepDefinition.java:20)
+	at ✽.Click On Rise In OI Rise In Price for Stocks Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/Bullish.feature:4)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDD_Suite-class-failed -->
           <div class="suite-BDD_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -230,22 +248,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">
-                  </a> <!-- runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE") -->
+                  <a name="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">
+                  </a> <!-- runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Most Active Stocks Put from Nse","Validation For Most Active Stocks Puts Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 16632, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f6faa7a9-9c96-47b3-a405-155863728742
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.StocksPuts.mostActiveStocksPutData(StocksPuts.java:46)
-	at stepDefinitions.StocksPutsDataStepDefinition.click_on_most_active_stocks_puts_data(StocksPutsDataStepDefinition.java:19)
-	at ✽.Click On Most Active Stocks Puts Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/StocksPuts.feature:4)
-
+                  <span class="parameters">("Extracting data from Nse of Rise In OI Rise In Price","Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at pageObjects.RORIBullish.riseInOiandRiseInPrice(RORIBullish.java:75)
+	at stepDefinitions.BullishStocksTradStepDefinition.click_on_rise_in_oi_rise_in_price_for_stocks_data(BullishStocksTradStepDefinition.java:20)
+	at ✽.Click On Rise In OI Rise In Price for Stocks Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/Bullish.feature:4)
+... Removed 4 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -253,22 +264,15 @@ Session ID: f6faa7a9-9c96-47b3-a405-155863728742
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">
-                  </a> <!-- runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE") -->
+                  <a name="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">
+                  </a> <!-- runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting data from Nse","Validation For Most Active Futures Contracts Data in NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//following::tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 14432, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 3ff6fb75-926a-4653-8290-1fa237ef7ba9
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.FutureContracts.dataOfMostActiveFutureContract(FutureContracts.java:59)
-	at stepDefinitions.ActiveFutureContractStepDefinition.click_on_most_active_futures_contract_data(ActiveFutureContractStepDefinition.java:24)
-	at ✽.Click On Most Active Futures Contract Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/ActiveFutureContracts.feature:4)
-
+                  <span class="parameters">("Extracting data from Nse of Rise In OI Rise In Price","Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at pageObjects.RORIBullish.riseInOiandRiseInPrice(RORIBullish.java:75)
+	at stepDefinitions.BullishStocksTradStepDefinition.click_on_rise_in_oi_rise_in_price_for_stocks_data(BullishStocksTradStepDefinition.java:20)
+	at ✽.Click On Rise In OI Rise In Price for Stocks Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/Bullish.feature:4)
+... Removed 4 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -276,22 +280,15 @@ Session ID: 3ff6fb75-926a-4653-8290-1fa237ef7ba9
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">
-                  </a> <!-- runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE") -->
+                  <a name="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">
+                  </a> <!-- runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting data from Nse","Validation For Most Active Futures Contracts Data in NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//following::tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 9936, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b0689a10-9087-4d1b-ab8b-0cbdc6497946
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.FutureContracts.dataOfMostActiveFutureContract(FutureContracts.java:59)
-	at stepDefinitions.ActiveFutureContractStepDefinition.click_on_most_active_futures_contract_data(ActiveFutureContractStepDefinition.java:24)
-	at ✽.Click On Most Active Futures Contract Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/ActiveFutureContracts.feature:4)
-
+                  <span class="parameters">("Extracting data from Nse of Rise In OI Rise In Price","Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at pageObjects.RORIBullish.riseInOiandRiseInPrice(RORIBullish.java:75)
+	at stepDefinitions.BullishStocksTradStepDefinition.click_on_rise_in_oi_rise_in_price_for_stocks_data(BullishStocksTradStepDefinition.java:20)
+	at ✽.Click On Rise In OI Rise In Price for Stocks Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/Bullish.feature:4)
+... Removed 4 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -303,12 +300,12 @@ Session ID: b0689a10-9087-4d1b-ab8b-0cbdc6497946
                   </a> <!-- runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Extracting Most Active Stocks Calls Data from Nse","Validation For Most Active Stocks calls Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 26416, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 63581b75-430f-4c9b-ad28-2061d0102a5b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 13372, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 1b4c4969-2ce1-400c-b890-af001acdfe0c
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pageObjects.StocksCalls.extarctStocksCallsData(StocksCalls.java:48)
@@ -322,42 +319,18 @@ Session ID: 63581b75-430f-4c9b-ad28-2061d0102a5b
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">
-                  </a> <!-- runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE") -->
+                  <a name="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">
+                  </a> <!-- runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting data from Nse","Validation For Most Active Futures Contracts Data in NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//following::tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+                  <span class="parameters">("Extracting data from Nse of Rise In OI Rise In Price","Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //option[@value=&apos;Rise-in-OI-Rise&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 20816, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: fa5eeee8-ebe6-4a6d-b7d5-57f7e068bef4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.FutureContracts.dataOfMostActiveFutureContract(FutureContracts.java:59)
-	at stepDefinitions.ActiveFutureContractStepDefinition.click_on_most_active_futures_contract_data(ActiveFutureContractStepDefinition.java:24)
-	at ✽.Click On Most Active Futures Contract Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/ActiveFutureContracts.feature:4)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">
-                  </a> <!-- runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Most Active Stocks Put from Nse","Validation For Most Active Stocks Puts Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element with the reference 1ed0a23c-c7a4-43d4-97d3-57f4babe6735 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8ad0076f-8516-447e-84a8-493bae51cc19, isElementDisplayed {id=1ed0a23c-c7a4-43d4-97d3-57f4babe6735}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 15776, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (8ad0076f-8516-447e-84a8-493bae51cc19)] -&gt; xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr]
-Session ID: 8ad0076f-8516-447e-84a8-493bae51cc19
+Command: [5cdbfad3-58fc-47c2-894b-716c776fe22b, findElement {value=//option[@value=&apos;Rise-in-OI-Rise&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 12576, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5cdbfad3-58fc-47c2-894b-716c776fe22b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -365,14 +338,13 @@ Session ID: 8ad0076f-8516-447e-84a8-493bae51cc19
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
-	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:223)
-	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:218)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pageObjects.StocksPuts.mostActiveStocksPutData(StocksPuts.java:46)
-	at stepDefinitions.StocksPutsDataStepDefinition.click_on_most_active_stocks_puts_data(StocksPutsDataStepDefinition.java:19)
-	at ✽.Click On Most Active Stocks Puts Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/StocksPuts.feature:4)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pageObjects.RORIBullish.riseInOiandRiseInPrice(RORIBullish.java:42)
+	at stepDefinitions.BullishStocksTradStepDefinition.click_on_rise_in_oi_rise_in_price_for_stocks_data(BullishStocksTradStepDefinition.java:20)
+	at ✽.Click On Rise In OI Rise In Price for Stocks Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/Bullish.feature:4)
 ... Removed 3 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -385,104 +357,12 @@ Session ID: 8ad0076f-8516-447e-84a8-493bae51cc19
                   </a> <!-- runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Extracting Most Active Stocks Calls Data from Nse","Validation For Most Active Stocks calls Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 24900, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a236abc6-17da-4e01-b105-35ee54aa1d4e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.StocksCalls.extarctStocksCallsData(StocksCalls.java:48)
-	at stepDefinitions.StocksCallStepDefiniton.click_on_most_active_stocks_calls_data(StocksCallStepDefiniton.java:18)
-	at ✽.Click On Most Active Stocks Calls Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/StocksCalls.feature:4)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">
-                  </a> <!-- runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Most Active Stocks Put from Nse","Validation For Most Active Stocks Puts Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 3284, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f9e76ae2-9abb-4d97-85e7-98f309c5c871
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.StocksPuts.mostActiveStocksPutData(StocksPuts.java:46)
-	at stepDefinitions.StocksPutsDataStepDefinition.click_on_most_active_stocks_puts_data(StocksPutsDataStepDefinition.java:19)
-	at ✽.Click On Most Active Stocks Puts Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/StocksPuts.feature:4)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">
-                  </a> <!-- runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Most Active Stocks Put from Nse","Validation For Most Active Stocks Puts Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 1236, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 88675de0-7e9c-4bd2-b307-8bd076e32b2f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.StocksPuts.mostActiveStocksPutData(StocksPuts.java:46)
-	at stepDefinitions.StocksPutsDataStepDefinition.click_on_most_active_stocks_puts_data(StocksPutsDataStepDefinition.java:19)
-	at ✽.Click On Most Active Stocks Puts Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/StocksPuts.feature:4)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">
-                  </a> <!-- runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Most Active Stocks Put from Nse","Validation For Most Active Stocks Puts Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 7920, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: e1f8f626-ed68-4c5a-8a5a-4f5ecd24f026
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageObjects.StocksPuts.mostActiveStocksPutData(StocksPuts.java:46)
-	at stepDefinitions.StocksPutsDataStepDefinition.click_on_most_active_stocks_puts_data(StocksPutsDataStepDefinition.java:19)
-	at ✽.Click On Most Active Stocks Puts Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/StocksPuts.feature:4)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Most Active Stocks Calls Data from Nse&quot;, &quot;Validation For Most Active Stocks calls Data F...)">
-                  </a> <!-- runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Most Active Stocks Calls Data from Nse","Validation For Most Active Stocks calls Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 13156, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 211d94c8-1b77-4a37-ad52-97e27869de3d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 5212, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: d2528a12-153f-4ee6-bf5f-c65a0d40ff95
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pageObjects.StocksCalls.extarctStocksCallsData(StocksCalls.java:48)
@@ -500,12 +380,12 @@ Session ID: 211d94c8-1b77-4a37-ad52-97e27869de3d
                   </a> <!-- runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Extracting data from Nse","Validation For Most Active Futures Contracts Data in NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//following::tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//following::tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 24624, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: bdf79a1b-89c1-4c80-bbc9-b185bef32324
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 28332, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a79a1328-1352-4d6c-ba01-5b648367c772
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pageObjects.FutureContracts.dataOfMostActiveFutureContract(FutureContracts.java:59)
@@ -523,12 +403,12 @@ Session ID: bdf79a1b-89c1-4c80-bbc9-b185bef32324
                   </a> <!-- runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Extracting data from Nse","Validation For Most Active Futures Contracts Data in NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//following::tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//following::tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 9572, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 6de1b039-93b2-4e0c-b5c4-216aead29b9b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 21296, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6da63667-4e3e-40fd-bad2-cba7d067959b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pageObjects.FutureContracts.dataOfMostActiveFutureContract(FutureContracts.java:59)
@@ -542,16 +422,55 @@ Session ID: 6de1b039-93b2-4e0c-b5c4-216aead29b9b
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">
+                  </a> <!-- runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Extracting data from Nse of Rise In OI Rise In Price","Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at pageObjects.RORIBullish.riseInOiandRiseInPrice(RORIBullish.java:75)
+	at stepDefinitions.BullishStocksTradStepDefinition.click_on_rise_in_oi_rise_in_price_for_stocks_data(BullishStocksTradStepDefinition.java:20)
+	at ✽.Click On Rise In OI Rise In Price for Stocks Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/Bullish.feature:4)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Extracting Most Active Stocks Calls Data from Nse&quot;, &quot;Validation For Most Active Stocks calls Data F...)">
                   </a> <!-- runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Extracting Most Active Stocks Calls Data from Nse","Validation For Most Active Stocks calls Data From NSE")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 24836, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 5a6e9972-3fd3-4e10-9b40-a4adcfd2e9ce
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 26436, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ac4a93c8-8dca-4d8b-86d3-d2b765625c57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.StocksCalls.extarctStocksCallsData(StocksCalls.java:48)
+	at stepDefinitions.StocksCallStepDefiniton.click_on_most_active_stocks_calls_data(StocksCallStepDefiniton.java:18)
+	at ✽.Click On Most Active Stocks Calls Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/StocksCalls.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Extracting Most Active Stocks Calls Data from Nse&quot;, &quot;Validation For Most Active Stocks calls Data F...)">
+                  </a> <!-- runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Extracting Most Active Stocks Calls Data from Nse","Validation For Most Active Stocks calls Data From NSE")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Options&apos;]//parent::tr | //table[@id=&apos;MACEquityTable&apos;]//tbody//tr//td[text()=&apos;Stock Futures&apos;]//parent::tr (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 12628, moz:profile: C:\Users\PRAVEP~1.000\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9bee9aa8-745e-4ee1-b3ff-df57fecabfa3
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pageObjects.StocksCalls.extarctStocksCallsData(StocksCalls.java:48)
@@ -573,10 +492,10 @@ Session ID: 5a6e9972-3fd3-4e10-9b40-a4adcfd2e9ce
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">
-                  </a> <!-- runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE") -->
+                  <a name="runScenario(&quot;Extracting Short Covering Stocks Data from Nse&quot;, &quot;Validation For Short Covering Data Slide In Oi Ri...)">
+                  </a> <!-- runScenario("Extracting Short Covering Stocks Data from Nse", "Validation For Short Covering Data Slide In Oi Ri...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting data from Nse","Validation For Most Active Futures Contracts Data in NSE")</span>
+                  <span class="parameters">("Extracting Short Covering Stocks Data from Nse","Validation For Short Covering Data Slide In Oi Rise Price From NSE")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -593,30 +512,10 @@ Session ID: 5a6e9972-3fd3-4e10-9b40-a4adcfd2e9ce
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Extracting data from Nse of Rise In OI Rise In Price&quot;, &quot;Validation For Bullish Stocks Rise In OI Ri...)">
-                  </a> <!-- runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...) -->
+                  <a name="runScenario(&quot;Extracting data from Nse&quot;, &quot;Validation For Most Active Futures Contracts Data in NSE&quot;)">
+                  </a> <!-- runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting data from Nse of Rise In OI Rise In Price","Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Short Covering Stocks Data from Nse&quot;, &quot;Validation For Short Covering Data Slide In Oi Ri...)">
-                  </a> <!-- runScenario("Extracting Short Covering Stocks Data from Nse", "Validation For Short Covering Data Slide In Oi Ri...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Short Covering Stocks Data from Nse","Validation For Short Covering Data Slide In Oi Rise Price From NSE")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">
-                  </a> <!-- runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Extracting Most Active Stocks Put from Nse","Validation For Most Active Stocks Puts Data From NSE")</span>
+                  <span class="parameters">("Extracting data from Nse","Validation For Most Active Futures Contracts Data in NSE")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -627,6 +526,16 @@ Session ID: 5a6e9972-3fd3-4e10-9b40-a4adcfd2e9ce
                   </a> <!-- runScenario("Extracting data from chartlink", "Validation For Most Active Futures Contracts Data in chartlink") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Extracting data from chartlink","Validation For Most Active Futures Contracts Data in chartlink")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Extracting Most Active Stocks Put from Nse&quot;, &quot;Validation For Most Active Stocks Puts Data From NSE&quot;)">
+                  </a> <!-- runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Extracting Most Active Stocks Put from Nse","Validation For Most Active Stocks Puts Data From NSE")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -696,92 +605,80 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(20);
+data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunner.TestRunner')
-data.setCell(0, 3, 28488);
+data.setCell(0, 3, 23489);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'testRunner.TestRunner')
-data.setCell(1, 3, 24333);
+data.setCell(1, 3, 23151);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'testRunner.TestRunner')
-data.setCell(2, 3, 23509);
+data.setCell(2, 3, 21319);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'testRunner.TestRunner')
-data.setCell(3, 3, 22947);
+data.setCell(3, 3, 20889);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'testRunner.TestRunner')
-data.setCell(4, 3, 22648);
+data.setCell(4, 3, 20209);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'testRunner.TestRunner')
-data.setCell(5, 3, 22568);
+data.setCell(5, 3, 19554);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'testRunner.TestRunner')
-data.setCell(6, 3, 21737);
+data.setCell(6, 3, 19182);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'testRunner.TestRunner')
-data.setCell(7, 3, 20791);
+data.setCell(7, 3, 18527);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'testRunner.TestRunner')
-data.setCell(8, 3, 20781);
+data.setCell(8, 3, 17686);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'testRunner.TestRunner')
-data.setCell(9, 3, 19991);
+data.setCell(9, 3, 16553);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'testRunner.TestRunner')
-data.setCell(10, 3, 18991);
+data.setCell(10, 3, 16330);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'testRunner.TestRunner')
-data.setCell(11, 3, 17874);
+data.setCell(11, 3, 15004);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
 data.setCell(12, 2, 'testRunner.TestRunner')
-data.setCell(12, 3, 17175);
+data.setCell(12, 3, 14810);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
 data.setCell(13, 2, 'testRunner.TestRunner')
-data.setCell(13, 3, 16895);
+data.setCell(13, 3, 13481);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
 data.setCell(14, 2, 'testRunner.TestRunner')
-data.setCell(14, 3, 14960);
+data.setCell(14, 3, 10964);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
 data.setCell(15, 2, 'testRunner.TestRunner')
-data.setCell(15, 3, 14621);
+data.setCell(15, 3, 10259);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'runScenario')
 data.setCell(16, 2, 'testRunner.TestRunner')
-data.setCell(16, 3, 14279);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'runScenario')
-data.setCell(17, 2, 'testRunner.TestRunner')
-data.setCell(17, 3, 13358);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'runScenario')
-data.setCell(18, 2, 'testRunner.TestRunner')
-data.setCell(18, 3, 9526);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'runScenario')
-data.setCell(19, 2, 'testRunner.TestRunner')
-data.setCell(19, 3, 9172);
+data.setCell(16, 3, 7138);
 window.suiteTableData['BDD_Suite']= { tableData: data, tableDiv: 'times-div-BDD_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-BDD_Suite">
               </div> <!-- times-div-BDD_Suite -->
             </div> <!-- times-div -->
@@ -809,92 +706,82 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@4403bff8)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@17f8db6)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</span>
-                <span class="method-start">865 ms</span>
+                <span class="method-start">801 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</span>
-                <span class="method-start">29360 ms</span>
+                <span class="method-start">21695 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</span>
-                <span class="method-start">51099 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</span>
-                <span class="method-start">74609 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</span>
-                <span class="method-start">97558 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting data from Nse", "Validation For Most Active Futures Contracts Data in NSE")</span>
-                <span class="method-start">120127 ms</span>
+                <span class="method-start">38249 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</span>
-                <span class="method-start">133487 ms</span>
+                <span class="method-start">45389 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</span>
+                <span class="method-start">63076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</span>
+                <span class="method-start">78080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</span>
+                <span class="method-start">94410 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</span>
+                <span class="method-start">112938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Ri...)</span>
+                <span class="method-start">133148 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting Short Covering Stocks Data from Nse", "Validation For Short Covering Data Slide In Oi Ri...)</span>
-                <span class="method-start">147767 ms</span>
+                <span class="method-start">156304 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...)</span>
-                <span class="method-start">162389 ms</span>
+                <span class="method-start">167271 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...)</span>
-                <span class="method-start">185038 ms</span>
+                <span class="method-start">188591 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...)</span>
-                <span class="method-start">202216 ms</span>
+                <span class="method-start">208146 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...)</span>
-                <span class="method-start">226550 ms</span>
+                <span class="method-start">227335 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting Most Active Stocks Calls Data from Nse", "Validation For Most Active Stocks calls Data F...)</span>
-                <span class="method-start">247342 ms</span>
+                <span class="method-start">250825 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</span>
-                <span class="method-start">256869 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</span>
-                <span class="method-start">274744 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</span>
-                <span class="method-start">293736 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</span>
-                <span class="method-start">302909 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</span>
-                <span class="method-start">322902 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Extracting Most Active Stocks Put from Nse", "Validation For Most Active Stocks Puts Data From NSE")</span>
-                <span class="method-start">343683 ms</span>
+                <span class="method-start">261085 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Extracting data from chartlink", "Validation For Most Active Futures Contracts Data in chartlink")</span>
-                <span class="method-start">358645 ms</span>
+                <span class="method-start">274566 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">375546 ms</span>
+                <span class="method-start">289379 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

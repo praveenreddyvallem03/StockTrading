@@ -38,7 +38,7 @@ public class SORPBullish {
 		String red = "\u001B[31m";
         String reset = "\u001B[0m";
 		try {
-			WebDriverWait wait=new WebDriverWait (driver,Duration.ofSeconds(10));
+			WebDriverWait wait=new WebDriverWait (driver,Duration.ofSeconds(05));
 			driver.findElement(SORPPageLOcators.shortCoveringPath).click();
 
 			System.out.println("[MYLOG]"+" :  "+

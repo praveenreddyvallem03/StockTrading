@@ -37,7 +37,7 @@ public class StocksPuts {
 		String red = "\u001B[31m";
         String reset = "\u001B[0m";
 		try {
-			WebDriverWait wait=new WebDriverWait (driver,Duration.ofSeconds(10));
+			WebDriverWait wait=new WebDriverWait (driver,Duration.ofSeconds(05));
 			driver.findElement(StocksPutsPageLocators.btnOfMostActiveStocks).click();
 			System.out
 					.println("[MYLOG]"+" :  "+red+"******************[  MOST ACTIVE STOCKS PUTS  ]********************"+reset);

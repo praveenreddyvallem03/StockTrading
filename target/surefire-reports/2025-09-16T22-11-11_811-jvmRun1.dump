@@ -1,15 +1,28 @@
-# Created at 2025-09-15T12:37:36.638
+# Created at 2025-09-16T22:11:45.433
 Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
-Thread dump before exiting the process (25784@PraveenReddy):
-"main" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@24.0.1/java.lang.Thread.sleepNanos0(Native Method)
-        at java.base@24.0.1/java.lang.Thread.sleepNanos(Thread.java:482)
-        at java.base@24.0.1/java.lang.Thread.sleep(Thread.java:513)
-        at app//pageObjects.FutureContracts.dataOfMostActiveFutureContract(FutureContracts.java:173)
-        at app//stepDefinitions.ActiveFutureContractStepDefinition.click_on_most_active_futures_contract_data(ActiveFutureContractStepDefinition.java:24)
-        at java.base@24.0.1/java.lang.invoke.LambdaForm$DMH/0x0000021981225400.invokeVirtual(LambdaForm$DMH)
-        at java.base@24.0.1/java.lang.invoke.LambdaForm$MH/0x0000021981225c00.invoke(LambdaForm$MH)
+Thread dump before exiting the process (20580@PraveenReddy):
+"Forwarding findElement on session e2e7b671-78c8-4919-ad7f-1c0a75f080ec to remote" 
+   java.lang.Thread.State: WAITING
+        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:223)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1910)
+        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3945)
+        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3891)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.waitingGet(CompletableFuture.java:1944)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2118)
+        at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:416)
+        at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+        at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+        at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+        at app//pageObjects.StocksCalls.extarctStocksCallsData(StocksCalls.java:51)
+        at app//stepDefinitions.StocksCallStepDefiniton.click_on_most_active_stocks_calls_data(StocksCallStepDefiniton.java:18)
+        at java.base@24.0.1/java.lang.invoke.LambdaForm$DMH/0x0000025712225400.invokeVirtual(LambdaForm$DMH)
+        at java.base@24.0.1/java.lang.invoke.LambdaForm$MH/0x0000025712225c00.invoke(LambdaForm$MH)
         at java.base@24.0.1/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
         at java.base@24.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
         at java.base@24.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -27,16 +40,16 @@ Thread dump before exiting the process (25784@PraveenReddy):
         at app//io.cucumber.core.runner.TestCase.run(TestCase.java:86)
         at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
         at app//io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-        at app//io.cucumber.testng.TestNGCucumberRunner$$Lambda/0x0000021981207ce8.accept(Unknown Source)
+        at app//io.cucumber.testng.TestNGCucumberRunner$$Lambda/0x0000025712207ce8.accept(Unknown Source)
         at app//io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-        at app//io.cucumber.core.runtime.CucumberExecutionContext$$Lambda/0x000002198120c000.run(Unknown Source)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext$$Lambda/0x000002571220c000.run(Unknown Source)
         at app//io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
         at app//io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
         at app//io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
         at app//io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-        at java.base@24.0.1/java.lang.invoke.LambdaForm$DMH/0x0000021981184000.invokeVirtual(LambdaForm$DMH)
-        at java.base@24.0.1/java.lang.invoke.LambdaForm$MH/0x0000021981208c00.invoke(LambdaForm$MH)
-        at java.base@24.0.1/java.lang.invoke.LambdaForm$MH/0x0000021981209000.invokeExact_MT(LambdaForm$MH)
+        at java.base@24.0.1/java.lang.invoke.LambdaForm$DMH/0x0000025712184000.invokeVirtual(LambdaForm$DMH)
+        at java.base@24.0.1/java.lang.invoke.LambdaForm$MH/0x0000025712208c00.invoke(LambdaForm$MH)
+        at java.base@24.0.1/java.lang.invoke.LambdaForm$MH/0x0000025712209000.invokeExact_MT(LambdaForm$MH)
         at java.base@24.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:156)
         at java.base@24.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
         at java.base@24.0.1/java.lang.reflect.Method.invoke(Method.java:565)
@@ -48,7 +61,7 @@ Thread dump before exiting the process (25784@PraveenReddy):
         at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
         at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
         at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-        at app//org.testng.TestRunner$$Lambda/0x0000021981127ae0.accept(Unknown Source)
+        at app//org.testng.TestRunner$$Lambda/0x0000025712127ae0.accept(Unknown Source)
         at java.base@24.0.1/java.util.ArrayList.forEach(ArrayList.java:1604)
         at app//org.testng.TestRunner.privateRun(TestRunner.java:739)
         at app//org.testng.TestRunner.run(TestRunner.java:614)
@@ -139,72 +152,6 @@ Thread dump before exiting the process (25784@PraveenReddy):
         at java.base@24.0.1/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1978)
         at java.base@24.0.1/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-"HttpClient-1-SelectorManager" 
-   java.lang.Thread.State: RUNNABLE
-        at java.base@24.0.1/sun.nio.ch.WEPoll.wait(Native Method)
-        at java.base@24.0.1/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:108)
-        at java.base@24.0.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:130)
-        at java.base@24.0.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:142)
-        at platform/java.net.http@24.0.1/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1338)
-
-"Driver Service Executor" 
-   java.lang.Thread.State: WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)
-        at java.base@24.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
-        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3945)
-        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3891)
-        at java.base@24.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1751)
-        at java.base@24.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1021)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
-        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
-
-"Driver Service Executor" 
-   java.lang.Thread.State: WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)
-        at java.base@24.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
-        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3945)
-        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3891)
-        at java.base@24.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1751)
-        at java.base@24.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1021)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
-        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
-
-"UrlChecker-2" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
-        at java.base@24.0.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1020)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
-        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
-
-"JdkHttpClient-0-0" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
-        at java.base@24.0.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1020)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
-        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
-
 "CompletableFutureDelayScheduler" 
    java.lang.Thread.State: TIMED_WAITING
         at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
@@ -218,57 +165,52 @@ Thread dump before exiting the process (25784@PraveenReddy):
         at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
         at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
 
-"JdkHttpClient-0-1" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
-        at java.base@24.0.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1020)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
-        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
-
-"JdkHttpClient-0-2" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
-        at java.base@24.0.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1020)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
-        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
-
-"JdkHttpClient-0-3" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
-        at java.base@24.0.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1020)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
-        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
-
-"HttpClient-2-SelectorManager" 
+"HttpClient-4-SelectorManager" 
    java.lang.Thread.State: RUNNABLE
-        at java.base@24.0.1/sun.nio.ch.WEPoll.wait(Native Method)
-        at java.base@24.0.1/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:108)
-        at java.base@24.0.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:130)
-        at java.base@24.0.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:142)
-        at platform/java.net.http@24.0.1/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1338)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1240)
 
-"JdkHttpClient-1-0" 
+"External Process Output Forwarder - C:\Users\prave.PRAVEENREDDY.000\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@24.0.1/java.io.FileInputStream.readBytes(Native Method)
+        at java.base@24.0.1/java.io.FileInputStream.read(FileInputStream.java:294)
+        at java.base@24.0.1/java.lang.Process$PipeInputStream.read(Process.java:897)
+        at java.base@24.0.1/java.io.InputStream.transferTo(InputStream.java:795)
+        at java.base@24.0.1/java.io.FileInputStream.transferTo(FileInputStream.java:403)
+        at java.base@24.0.1/java.io.BufferedInputStream.transferTo(BufferedInputStream.java:549)
+        at app//org.openqa.selenium.os.ExternalProcess$Builder.lambda$start$0(ExternalProcess.java:218)
+        at app//org.openqa.selenium.os.ExternalProcess$Builder$$Lambda/0x0000025712234938.run(Unknown Source)
+        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
+        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
+
+"Driver Service Executor" 
+   java.lang.Thread.State: WAITING
+        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)
+        at java.base@24.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3945)
+        at java.base@24.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3891)
+        at java.base@24.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1751)
+        at java.base@24.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1021)
+        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
+        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
+        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
+
+"Driver Service Executor" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@24.0.1/java.lang.ProcessImpl.waitForTimeoutInterruptibly(Native Method)
+        at java.base@24.0.1/java.lang.ProcessImpl.waitFor(ProcessImpl.java:584)
+        at app//org.openqa.selenium.os.ExternalProcess.waitFor(ExternalProcess.java:291)
+        at app//org.openqa.selenium.remote.service.DriverService.lambda$start$2(DriverService.java:222)
+        at app//org.openqa.selenium.remote.service.DriverService$$Lambda/0x00000257122898f8.get(Unknown Source)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1814)
+        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+        at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
+        at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
+
+"JdkHttpClient-3-0" 
    java.lang.Thread.State: TIMED_WAITING
         at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
@@ -282,7 +224,7 @@ Thread dump before exiting the process (25784@PraveenReddy):
         at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
         at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
 
-"JdkHttpClient-1-1" 
+"JdkHttpClient-3-1" 
    java.lang.Thread.State: TIMED_WAITING
         at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
@@ -296,7 +238,7 @@ Thread dump before exiting the process (25784@PraveenReddy):
         at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
         at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
 
-"JdkHttpClient-1-2" 
+"JdkHttpClient-3-2" 
    java.lang.Thread.State: TIMED_WAITING
         at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
@@ -310,16 +252,53 @@ Thread dump before exiting the process (25784@PraveenReddy):
         at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
         at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)
 
-"JdkHttpClient-1-3" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@24.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@24.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
-        at java.base@24.0.1/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
-        at java.base@24.0.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1020)
-        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
+"JdkHttpClient-3-3" 
+   java.lang.Thread.State: RUNNABLE
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Request.lambda$static$0(Http1Request.java:59)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Request$$Lambda/0x00000257122a5970.test(Unknown Source)
+        at java.base@24.0.1/java.util.function.BiPredicate.lambda$and$0(BiPredicate.java:73)
+        at java.base@24.0.1/java.util.function.BiPredicate$$Lambda/0x00000257122c7600.test(Unknown Source)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Request.collectHeaders1(Http1Request.java:197)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Request.collectHeaders0(Http1Request.java:122)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Request.headers(Http1Request.java:311)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Exchange.lambda$sendHeadersAsync$2(Http1Exchange.java:351)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Exchange$$Lambda/0x00000257122ae6d8.apply(Unknown Source)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1233)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2393)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Http1Exchange.sendHeadersAsync(Http1Exchange.java:337)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl$0(Exchange.java:559)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Exchange$$Lambda/0x000002571229f8c0.apply(Unknown Source)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Exchange.checkFor407(Exchange.java:408)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Exchange.lambda$responseAsyncImpl$2(Exchange.java:563)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Exchange$$Lambda/0x00000257122a92b0.apply(Unknown Source)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:980)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:996)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2424)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:563)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:385)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:437)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$0(MultiExchange.java:357)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.MultiExchange$$Lambda/0x000002571229e458.apply(Unknown Source)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1196)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:556)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1819)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:168)
+        at java.base@24.0.1/java.util.concurrent.CompletableFuture.completeAsync(CompletableFuture.java:2789)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.MultiExchange.responseAsync(MultiExchange.java:310)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.HttpClientImpl.sendAsync(HttpClientImpl.java:1015)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:901)
+        at platform/java.net.http@24.0.1/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+        at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+        at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x00000257122487c0.execute(Unknown Source)
+        at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+        at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda/0x00000257122988d8.execute(Unknown Source)
+        at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+        at app//org.openqa.selenium.remote.http.Filter$$Lambda/0x0000025712248a08.execute(Unknown Source)
+        at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+        at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x0000025712298458.run(Unknown Source)
+        at java.base@24.0.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+        at java.base@24.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+        at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
         at java.base@24.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
         at java.base@24.0.1/java.lang.Thread.runWith(Thread.java:1460)
         at java.base@24.0.1/java.lang.Thread.run(Thread.java:1447)

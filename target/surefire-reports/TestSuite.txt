@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 384.9 s -- in TestSuite
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 11, Time elapsed: 298.2 s <<< FAILURE! -- in TestSuite
+testRunner.TestRunner.runScenario["Extracting data from Nse of Rise In OI Rise In Price", "Validation For Bullish Stocks Rise In OI Rise In Price Data in NSE"](9) -- Time elapsed: 23.16 s <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pageObjects.RORIBullish.riseInOiandRiseInPrice(RORIBullish.java:75)
+	at stepDefinitions.BullishStocksTradStepDefinition.click_on_rise_in_oi_rise_in_price_for_stocks_data(BullishStocksTradStepDefinition.java:20)
+	at ✽.Click On Rise In OI Rise In Price for Stocks Data(file:///C:/Users/prave.PRAVEENREDDY.000/eclipse-workspace/TradingStocks/src/test/java/Features/Bullish.feature:4)
+

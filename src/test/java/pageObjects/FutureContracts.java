@@ -47,7 +47,7 @@ public class FutureContracts {
 		String reset = "\u001B[0m";
 		try {
 			
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(05));
 			driver.findElement(ActiveFutureContractsPageLocators.btnMostActiveFutureContracts).click();
 			WebElement dropdown=driver.findElement(By.xpath("//select[@name='mac_equity_filter']"));
 			Select select=new Select(dropdown);
@@ -84,7 +84,7 @@ public class FutureContracts {
 			Assert.assertTrue(stockFuturesFound);
 
 		} finally {
-			Thread.sleep(3000);
+//			Thread.sleep(3000);
 			driver.quit();
 
 		}
